@@ -2,11 +2,20 @@
 
 Repository of code which establishes a generalized framework for building and running visual stimuli presenting letters in MATLAB with Psychtoolbox.
 
-## Overview
+## General Overview:
 
-**letterFlipper** is a MATLAB repository developed for building and implimenting cognitive vision science experiments presenting letter-containing stimuli with Psychtoolbox. letterFlipper contains generalized code enabling users to quickly and flexibly design and run wide range of potential visual tasks presenting letters/characters.
+**letterFlipper** is a MATLAB repository developed for building and implimenting cognitive vision science experiments presenting letter-containing stimuli with Psychtoolbox. **letterFlipper** contains generalized code enabling users to quickly and flexibly design and run wide range of potential visual tasks presenting letters/characters.
 
-## Dependencies
+## Brief List of Built in Capabilities:
+- Separate functions and workflows for image/task creation and task presentation enable users to develop and impliment tasks in a modular manner:
+    - Let me unpack that: letterFlipper has separate, 'stand-alone' functions/workflows for both generating the stack of images and files presented in an experiment and for presenting them in the precise manner desired.
+    - In other words, letterFlipper effectively allows users to flexibly generate a set of task images/rules with a "letter image/task generation" workflow and impliment/present them in desired manner using a separate "letter image flipper" task presentation workflow.
+- Frameworks for creating and running tasks are highly generalized and can both create and impliment a wide range of potential different tasks with minimal coding.
+    - Q: How does **letterFlipper** achieve this? A: 'Parameter Descriptor Files'
+      - Users can flexibly create and update 'parameter descriptor files' 
+      - These allow users to define all relevant aspects of
+
+## Dependencies:
 
 - MATLAB R2021a or newer
 - Required Toolbox(es):
