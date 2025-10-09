@@ -52,13 +52,32 @@ savepath
 
 ## Usage:
 
-### Short List of Important Files
+### Short List of Important Files and Folders/Directories:
 
-| File/Folder                | Description                                       |
-|----------------------------|---------------------------------------------------|
-| `genImgFlipperMain_v1.m`   | Primary script to run the project                 |
-| `miscFcns/`                | User-defined functions that did not match a tag   |
-| `subFolderName/`           | Functions grouped based on original path tags     |
-| `data/`, `figures/`        | Additional manually created folders if present    |
+| File/Folder                         | Description                                                                                                             |
+|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| `letterFlipper/`                    | Main program directory. Contains Matlab code.                                                                           |
+| `letterFlipper/stimImages/`         | Subdirectory where stimulus images are saved/stored.                                                                    |
+| `letterFlipper/expDataOut/`         | Subdirectory where subjects' data are saved                                                                             |
+| `txtPltCntrlFixImgStackBldr_v1.m`   | Main function for generating stimulus image sets                                                                        |
+| `txtTaskImgBuilderPDF_01.m`         | 'Parameter Descriptor File' instance/template for defining adustable parameters used in txtPltCntrlFixImgStackBldr_v1.m |
+| `genImgFlipperMain_v1.m`            | Main function for running/presenting stimuli                                                                            |
+| `genImgFlipperPDF_01.m`             | 'Parameter Descriptor File' instance/template for defining adustable parameters used in genImgFlipperMain_v1.m          |
+
+
+### General workflow for creating and running stimuli with letterFlipper:
+
+- **Step 01:** Generate the desired stimulus image files using txtPltCntrlFixImgStackBldr_v1.m
+
+- **Step 02:** Generate a genImgFlipperPDF_##.m instance pointing to stimulus files created in Step 01 and adjust other stimulus presentation parameters as desired.
+
+- **Step 03:** Update genImgFlipperMain_v1.m to point to instance pointing to newly created genImgFlipperPDF_##.
+
+- **Step 04:** Run genImgFlipperMain_v1.m to run the task.
+
+
+
+
+
 
 
