@@ -67,13 +67,13 @@ savepath
 
 ### General workflow for creating and running stimuli with letterFlipper:
 
-- **Step 01:** Generate the desired stimulus image files using txtPltCntrlFixImgStackBldr_v1.m
+**Step 01:** Generate the desired stimulus image files using txtPltCntrlFixImgStackBldr_v1.m
 
-- **Step 02:** Generate a genImgFlipperPDF_##.m instance pointing to stimulus files created in Step 01 and adjust other stimulus presentation parameters as desired.
+**Step 02:** Generate a new `genImgFlipperPDF_##.m` instance for this task pointing to stimulus files created in **Step 01** and adjust other stimulus presentation parameters as desired.
 
-- **Step 03:** Update genImgFlipperMain_v1.m to point to instance pointing to newly created genImgFlipperPDF_##.
+**Step 03:** Update `genImgFlipperMain_v1.m` to point to instance pointing to newly created genImgFlipperPDF_##.
 
-- **Step 04:** Run genImgFlipperMain_v1.m to run the task.
+**Step 04:** Run `genImgFlipperMain_v1.m` to run the task.
 
 
 
