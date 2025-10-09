@@ -13,9 +13,9 @@ Repository of generalized functions for building visual stimuli presenting lette
   - MATLAB (base)
   - [Deep Learning Toolbox](https://www.mathworks.com/help/deeplearning/index.html?s_tid=srchtitle_site_search_1_Deep+learning+toolbox)
   - [Computer Vision Toolbox](https://www.mathworks.com/help/vision/index.html?s_tid=srchtitle_site_search_1_Computer+vision+toolbox)
-  - 
+  - [Psychtoolbox 3](http://psychtoolbox.org/) (I developed this repository using version [3.0.19.13](https://github.com/Psychtoolbox-3/Psychtoolbox-3/tree/3.0.19.13))
 
-## Installation
+## Installation:
 
 ### macOS and Linux
 
@@ -26,10 +26,10 @@ Open a terminal and run:
 cd ~/Documents/MATLAB
 
 # Clone the repository from GitHub
-git clone https://github.com/yourGithubUsername/yourProjectRepoName.git
+git clone https://github.com/ejduwell/letterFlipper.git
 
 # Open MATLAB and add the project to your path:
-addpath(genpath('~/Documents/MATLAB/yourProjectRepoName'))
+addpath(genpath('~/Documents/MATLAB/letterFlipper'))
 savepath
 ```
 
@@ -43,26 +43,22 @@ savepath
 cd('C:\Users\YourName\Documents\MATLAB')
 
 % Clone from GitHub (or download ZIP and unzip manually)
-system('git clone https://github.com/yourGithubUsername/yourProjectRepoName.git')
+system('git clone https://github.com/ejduwell/letterFlipper.git')
 
 % Add the project folder to your MATLAB path:
-addpath(genpath('C:\Users\YourName\Documents\MATLAB\yourProjectRepoName'))
+addpath(genpath('C:\Users\YourName\Documents\MATLAB\letterFlipper'))
 savepath
 ```
 
-## Usage
+## Usage:
 
-### Common File Types
+### Short List of Important Files
 
-| File/Folder            | Description                                       |
-|------------------------|---------------------------------------------------|
-| `yourMainScript.m`     | Primary script to run the project                 |
-| `miscFcns/`            | User-defined functions that did not match a tag  |
-| `subFolderName/`       | Functions grouped based on original path tags     |
-| `data/`, `figures/`    | Additional manually created folders if present    |
+| File/Folder                | Description                                       |
+|----------------------------|---------------------------------------------------|
+| `genImgFlipperMain_v1.m`   | Primary script to run the project                 |
+| `miscFcns/`                | User-defined functions that did not match a tag   |
+| `subFolderName/`           | Functions grouped based on original path tags     |
+| `data/`, `figures/`        | Additional manually created folders if present    |
 
-## Tips for Reuse
 
-- If you are adapting this repository for your own project, rename the folder and scripts as needed.
-- If you wish to clean/export a new version, use `pipeCleaner` to regenerate a fresh copy with updated dependencies.
-- If you make changes to file structure, be sure to re-test that your pipeline runs correctly.
