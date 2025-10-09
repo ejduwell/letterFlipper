@@ -4,7 +4,7 @@ Repository of generalized functions for building visual stimuli presenting lette
 
 ## Overview
 
-**letterFlipper** is a MATLAB-based project developed for building and presenting letter-based stimuli in MATLAB with Psychtoolbox. letterFlipper contains generalized code enabling users to quickly, flexibly design and impliment wide range of potential visual tasks presenting letters/characters.
+**letterFlipper** is a MATLAB repository developed for building and implimenting cognitive vision science experiments presenting letter-containing stimuli with Psychtoolbox. letterFlipper contains generalized code enabling users to quickly and flexibly design and run wide range of potential visual tasks presenting letters/characters.
 
 ## Dependencies
 
@@ -74,6 +74,7 @@ savepath
 
 
 ### General workflow for creating and running stimuli with letterFlipper:
+
 ---
 > - **Step 00:** Make a new `txtTaskImgBuilderPDF_##.m` instance/copy for this task, and adjust parameters to set desired stimulus image and response parameters
 > - **Step 01:** Generate the desired stimulus image files using `txtPltCntrlFixImgStackBldr_v1`.
