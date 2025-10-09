@@ -24,10 +24,14 @@ Open a terminal and run:
 ```bash
 # Navigate to desired install location
 cd ~/Documents/MATLAB
+```
 
+```bash
 # Clone the repository from GitHub
 git clone https://github.com/ejduwell/letterFlipper.git
+```
 
+```bash
 # Open MATLAB and add the project to your path:
 addpath(genpath('~/Documents/MATLAB/letterFlipper'))
 savepath
@@ -41,10 +45,14 @@ savepath
 ```matlab
 % Change directory to desired location
 cd('C:\Users\YourName\Documents\MATLAB')
+```
 
+```matlab
 % Clone from GitHub (or download ZIP and unzip manually)
 system('git clone https://github.com/ejduwell/letterFlipper.git')
+```
 
+```matlab
 % Add the project folder to your MATLAB path:
 addpath(genpath('C:\Users\YourName\Documents\MATLAB\letterFlipper'))
 savepath
