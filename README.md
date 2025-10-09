@@ -1,6 +1,6 @@
 # letterFlipper
 
-Repository of generalized functions for building visual stimuli presenting letters in MATLAB with Psychtoolbox.
+Repository of code which establishes a generalized framework for building and running visual stimuli presenting letters in MATLAB with Psychtoolbox.
 
 ## Overview
 
