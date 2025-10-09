@@ -11,7 +11,9 @@ Repository of generalized functions for building visual stimuli presenting lette
 - MATLAB R2021a or newer
 - Required Toolbox(es):
   - MATLAB (base)
-  - [Add any additional toolboxes used]
+  - [Deep Learning Toolbox](https://www.mathworks.com/help/deeplearning/index.html?s_tid=srchtitle_site_search_1_Deep+learning+toolbox)
+  - [Computer Vision Toolbox](https://www.mathworks.com/help/vision/index.html?s_tid=srchtitle_site_search_1_Computer+vision+toolbox)
+  - 
 
 ## Installation
 
