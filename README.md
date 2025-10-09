@@ -4,7 +4,7 @@ Repository of generalized functions for building visual stimuli presenting lette
 
 ## Overview
 
-**yourProjectRepoName** is a MATLAB-based project developed for [insert research purpose here]. This repository contains code used for [experiment, simulation, data analysis, modeling, etc.], including all required user-defined functions and scripts.
+**letterFlipper** is a MATLAB-based project developed for building and presenting letter-based stimuli in MATLAB with Psychtoolbox. This repository contains generalized code enabling users to quickly and flexibly design and impliment wide range of potential visual psychophysics tasks presenting letters/characters.
 
 ## Dependencies
 
