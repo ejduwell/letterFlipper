@@ -135,7 +135,8 @@ Below are more detailed instructions to walk you through each of the 5 steps in 
 
 > - *Step 00b:* Edit/update the parameters in each section of `txtTaskImgBuilderPDF_yourName.m` to specify the content of the task letter image set, expected button presses, and all other parameters accepted by `txtPltCntrlFixImgStackBldr_v1.m` , the 'main function' for the 'image/task generation' workflow:
 
-<p style="margin-left: 25px;">This line is indented 25px from the margin.</p>
+
+<center>This text is centered.</center>
 
 
 ---
