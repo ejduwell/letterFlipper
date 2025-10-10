@@ -117,7 +117,7 @@ However, regardless of the details of any particular use case, the creation of t
 
 ---
 > - **Step 00:** Make a new `txtTaskImgBuilderPDF_##.m` instance/copy for this task, and adjust parameters to set desired stimulus image and response parameters
-> - **Step 01:** Generate the desired stimulus image files using `txtPltCntrlFixImgStackBldr_v1.m`.
+> - **Step 01:** Update a single parameter in `txtPltCntrlFixImgStackBldr_v1.m` to point to your new `txtTaskImgBuilderPDF_##.m` file, then run it to generate the desired stimulus image files.
 > - **Step 02:** Make a new `genImgFlipperPDF_##.m` instance/copy for this task pointing to stimulus files created in **Step 01** and adjust other stimulus presentation parameters as desired.
 > - **Step 03:** Update a single parameter in `genImgFlipperMain_v1.m` to point to your newly created `genImgFlipperPDF_##.m` instance.
 > - **Step 04:** Run `genImgFlipperMain_v1.m` to run the task.
