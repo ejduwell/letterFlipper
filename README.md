@@ -130,22 +130,33 @@ Below are more detailed instructions to walk you through each of the 5 steps in 
 
 ---
 > - **Step 00:** Make a new `txtTaskImgBuilderPDF_##.m` instance/copy for this task, and adjust parameters to set desired stimulus image and response parameters
+
+**Step 00a:**
+- make a copy of the `txtTaskImgBuilderPDF_01.m` template in the main `letterFlipper/` folder and give it a unique name. For the purposes of this instruction demo lets call it `txtTaskImgBuilderPDF_yourName.m`
+
+**Step 00b:**
+-  Edit/update the parameters in each section of `txtTaskImgBuilderPDF_yourName.m` to specify the content of the task letter image set, which parameter will be manipulated by QUEST, which parameter will the 'response' parameter, expected button presses, and all other parameters accepted by `txtPltCntrlFixImgStackBldr_v1.m` , the 'main function' for the 'image/task generation' workflow.
+
 ---
 
 ---
 > - **Step 01:** Update a single parameter in `txtPltCntrlFixImgStackBldr_v1.m` to point to your new `txtTaskImgBuilderPDF_##.m` file, then run it to generate the desired stimulus image files.
+
 ---
 
 ---
 > - **Step 02:** Make a new `genImgFlipperPDF_##.m` instance/copy for this task pointing to stimulus files created in **Step 01** and adjust other stimulus presentation parameters as desired.
+
 ---
 
 ---
 > - **Step 03:** Update a single parameter in `genImgFlipperMain_v1.m` to point to your newly created `genImgFlipperPDF_##.m` instance.
+
 ---
 
 ---
 > - **Step 04:** Run `genImgFlipperMain_v1.m` to run the task.
+
 ---
 
 ## Task Data Output:
