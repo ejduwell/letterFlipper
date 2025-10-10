@@ -31,7 +31,8 @@ Repository of code which establishes a generalized framework for building and ru
   - specify the corresponding set of expected button presses for each possible response parameter value
 
 - Task presentation/implimentation parameter maniplations currently supported by letterFlipper out-of-the-box allow users to specify:
-    - trial the # of trials per run
+    - the # of trials per run
+    - the number of runs per block
     - low-level trial architecture / timing parameters such as:
       - image presentation onset and disappearance times
       - response window length
