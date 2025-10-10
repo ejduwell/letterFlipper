@@ -136,7 +136,11 @@ Below are more detailed instructions to walk you through each of the 5 steps in 
 > - *Step 00b:* Edit/update the parameters in each section of `txtTaskImgBuilderPDF_yourName.m` to specify the content of the task letter image set, expected button presses, and all other parameters accepted by `txtPltCntrlFixImgStackBldr_v1.m` , the 'main function' for the 'image/task generation' workflow:
 
 
-<center>This text is centered.</center>
+<p align="center">
+  <font color="red">Welcome to My Project!</b></font>
+  <font color="red">A lightweight and efficient solution for ...</font>
+</p>
+
 
 
 ---
@@ -154,6 +158,12 @@ Below are more detailed instructions to walk you through each of the 5 steps in 
 ---
 > **Step 04:** Run `genImgFlipperMain_v1.m` to run the task.
 ---
+
+
+<font color="red">This text is red.</font>
+<font color="blue">This text is blue.</font>
+<font color="#00FF00">This text is bright green (hex code).</font>
+
 
 
 ## Task Data Output:
