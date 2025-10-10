@@ -21,7 +21,7 @@ Repository of code which establishes a generalized framework for building and ru
         
 - Task image parameter maniplations currently supported by letterFlipper out-of-the-box allow users to:
   - Specify a set of letters presented
-          - Note: a 'Snellen E Mode" allows users to generate and present 'Snellen-like' letter 'E' stimuli similar to those used in clinical ophthalmology exams
+      - a 'Snellen E Mode" allows users to generate and present 'Snellen-like' letter 'E' stimuli similar to those used in clinical ophthalmology exams
   - Specify a set of different locations in which letters can appear
   - Specify a set of possible text sizes
   - Specify a set of possible text colors/luminance values in the form of rgb vectors
