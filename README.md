@@ -6,7 +6,7 @@ Repository of code which establishes a generalized framework for building and ru
 
 **letterFlipper** is a MATLAB repository developed for building and implimenting cognitive vision science experiments presenting letter-containing stimuli with Psychtoolbox. **letterFlipper** contains generalized code enabling users to quickly and flexibly design and run wide range of potential visual tasks presenting letters/characters.
 
-### Brief List of Built in Capabilities:
+### Brief Description of Capabilities:
 
 - Separate functions and workflows for image/task creation and task presentation enable users to develop and impliment tasks in a modular manner:
     - **letterFlipper** has separate, 'stand-alone' functions/workflows for both generating the stack of images and files presented in an experiment and for presenting them in the precise manner desired.
