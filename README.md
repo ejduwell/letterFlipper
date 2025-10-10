@@ -140,6 +140,17 @@ Below are more detailed instructions to walk you through each of the 5 steps in 
 
 >   **Under the section titled: *Specify Parameters that vary across images***
 
+>   **Under the section titled: *Specify parameter for responses***
+
+>   **Under the section titled: *Specify parameter for QUEST to manipulate***
+
+>   **Under the section titled: *Specify Buttons and Build Correct Button Column***
+
+>   **Under the section titled: *Fixation point parameters...***
+
+>   **Under the section titled: *Set output stimulus image size***
+
+
 
 </div>
 
