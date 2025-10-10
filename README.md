@@ -29,6 +29,7 @@ Repository of code which establishes a generalized framework for building and ru
   - the set of possible rotation angles applied to letters
   - specify which of these parameters is the "response parameter" to which subjects will be responding via pressing butons thoughout the task
   - specify the corresponding set of expected button presses for each possible response parameter value
+  - specify which parameter will be manipulated by QUEST to control task difficulty
 
 - Task presentation/implimentation parameter maniplations currently supported by letterFlipper out-of-the-box allow users to specify:
     - the # of trials per run
