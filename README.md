@@ -136,22 +136,61 @@ Below are more detailed instructions to walk you through each of the 5 steps in 
 > - *Step 00b:* Edit/update the parameters in each section of `txtTaskImgBuilderPDF_yourName.m` to specify the content of the task letter image set, expected button presses, and all other parameters accepted by `txtPltCntrlFixImgStackBldr_v1.m` , the 'main function' for the 'image/task generation' workflow:
 
 <div align="center">
-
-
->   **Under the section titled: *Specify Parameters that vary across images***
-
->   **Under the section titled: *Specify parameter for responses***
-
->   **Under the section titled: *Specify parameter for QUEST to manipulate***
-
->   **Under the section titled: *Specify Buttons and Build Correct Button Column***
-
->   **Under the section titled: *Fixation point parameters...***
-
->   **Under the section titled: *Set output stimulus image size***
+    
+>   #### Under the section titled: *Specify Parameters that vary across images*
 
 
 
+>  Build out set of letters
+
+> Build out set of locations
+
+> Build out set of text sizes
+
+> Build out set of text colors
+
+> Build out set of text rotation angles
+
+> List Names for Sets Pars Changing Across Images
+
+> List Corresponding Sets of Pars Changing Across Images
+
+> List TDF Header Label Names for Sets Pars Changing Across Images
+
+</div>
+
+<div align="center">
+    
+>   #### Under the section titled: *Generate full set of all possible images with combVecCellz2Struct_v1*
+
+You shouldn't need to change anything here.
+
+The one command run in this section (combVecCellz2Struct_v2) takes the parameter sets defined in the previous section and generates the full set of possible combinations efficiently using the combvec function.
+</div>
+
+<div align="center">
+    
+>   #### Under the section titled: *Specify parameter for responses*
+</div>
+
+<div align="center">
+    
+>   #### Under the section titled: *Specify parameter for QUEST to manipulate*
+</div>
+
+<div align="center">
+    
+>   #### Under the section titled: *Specify Buttons and Build Correct Button Column*
+</div>
+
+<div align="center">
+    
+>   #### Under the section titled: *Fixation point parameters...*
+</div>
+
+<div align="center">
+    
+>   #### Under the section titled: *Set output stimulus image size..*
 </div>
 
 
