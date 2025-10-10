@@ -139,23 +139,21 @@ Below are more detailed instructions to walk you through each of the 5 steps in 
     
 >   #### Under the section titled: *Specify Parameters that vary across images*
 
+> **Build out set of letters**
 
+> **Build out set of locations**
 
->  Build out set of letters
+> **Build out set of text sizes**
 
-> Build out set of locations
+> **Build out set of text colors**
 
-> Build out set of text sizes
+> **Build out set of text rotation angles**
 
-> Build out set of text colors
+> **List Names for Sets Pars Changing Across Images**
 
-> Build out set of text rotation angles
+> **List Corresponding Sets of Pars Changing Across Images**
 
-> List Names for Sets Pars Changing Across Images
-
-> List Corresponding Sets of Pars Changing Across Images
-
-> List TDF Header Label Names for Sets Pars Changing Across Images
+> **List TDF Header Label Names for Sets Pars Changing Across Images**
 
 </div>
 
