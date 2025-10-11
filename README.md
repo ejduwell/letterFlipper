@@ -308,6 +308,10 @@ parStruct.cropsz = 1024; % output edge dimension of screen & images (square)
 % Specify which parameter descriptor file name to use..
 parDescFile="txtTaskImgBuilderPDF_yourName";
 ```
+> *Step 01c:* Run txtPltCntrlFixImgStackBldr_v1 either by hitting the green "Run" button in the editor window or by running it as a command in the Matlab command window:
+```matlab
+txtPltCntrlFixImgStackBldr_v1
+```
 
 ---
 > **Step 02:** Make a new `genImgFlipperPDF_##.m` instance/copy for this task pointing to stimulus files created in **Step 01** and adjust other stimulus presentation parameters as desired.
