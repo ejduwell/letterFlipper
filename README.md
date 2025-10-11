@@ -230,10 +230,8 @@ parStruct.tdfHeaderz={
 
     
 > Under the section titled *Generate full set of all possible images with combVecCellz2Struct_v1*:
-
-You shouldn't need to change anything here.
-
-The one command run in this section (combVecCellz2Struct_v2) takes the parameter sets defined in the previous section and generates the full set of possible combinations efficiently using the combvec function.
+> - You shouldn't need to change anything here.
+> - The one command run in this section (combVecCellz2Struct_v2) takes the parameter sets defined in the previous section and generates the full set of possible combinations efficiently using the combvec function.
 
     
 >  Under the section titled *Specify parameter for responses*
