@@ -135,7 +135,7 @@ Below are more detailed instructions to walk you through each of the 5 steps in 
 
 > *Step 00b:* Edit/update the parameters in each section of `txtTaskImgBuilderPDF_yourName.m` to specify the content of the task letter image set, expected button presses, and all other parameters accepted by `txtPltCntrlFixImgStackBldr_v1.m` , the 'main function' for the 'image/task generation' workflow:
 
-> Under the section titled *Specify Parameters that vary across images*:
+> #### Under the section titled *Specify Parameters that vary across images*:
 ```matlab
 % Build out set of letters
 %--------------------------------------------------------------------------
@@ -227,27 +227,75 @@ parStruct.tdfHeaderz={
     };
 %--------------------------------------------------------------------------
 ```
-
     
-> Under the section titled *Generate full set of all possible images with combVecCellz2Struct_v1*:
+> #### Under the section titled *Generate full set of all possible images with combVecCellz2Struct_v1*:
 > - You shouldn't need to change anything here.
 > - The one command run in this section (combVecCellz2Struct_v2) takes the parameter sets defined in the previous section and generates the full set of possible combinations efficiently using the combvec function.
 
     
->  Under the section titled *Specify parameter for responses*
+>  #### Under the section titled *Specify parameter for responses*:
 
+```matlab
+parStruct.respParName=parStruct.combVecParNames{1,5}; % specify par name in combVecParNames
+parStruct.respColName=parStruct.tdfHeaderz{1,5}; % specify column name in tdfHeaderz
+% Automatically save the index too..
+parStruct.respParIdx = find(cellfun(@(x) isequal(x, parStruct.respParName), parStruct.combVecParNames));
+```
     
->  Under the section titled *Specify parameter for QUEST to manipulate*
+>  #### Under the section titled *Specify parameter for QUEST to manipulate*:
 
+```matlab
+parStruct.qstParName=parStruct.combVecParNames{1,3}; % specify par name in combVecParNames
+parStruct.qstColName=parStruct.tdfHeaderz{1,3}; % specify column name in tdfHeaderz
+% Automatically save the index too..
+parStruct.qstParIdx = find(cellfun(@(x) isequal(x, parStruct.qstParName), parStruct.combVecParNames));
+```
     
->  Under the section titled *Specify Buttons and Build Correct Button Column*
+>  #### Under the section titled *Specify Buttons and Build Correct Button Column*:
 
+```matlab
+parStruct.buttons=upper({'W','D','A','S'}); % set buttons. ensure uppercase..
 
->  Under the section titled *Fixation point parameters...*
+% Build out parKeyPressDecoder:
+% each row is for a single parameter and should contain a 1x2 cell array.
+% the first variable in each cell array should be the parameter value, the
+% second variable in each cell array should be the expected character
+% string for desired "correct" button press for that par value
+%--------------------------------------------------------------------------
+parStruct.parKeyPressDecoder={
+    {parStruct.combVecPars{1,parStruct.respParIdx}{1,1},parStruct.buttons{1,1}}, ...
+    {parStruct.combVecPars{1,parStruct.respParIdx}{1,2},parStruct.buttons{1,2}}, ...
+    {parStruct.combVecPars{1,parStruct.respParIdx}{1,3},parStruct.buttons{1,3}}, ...
+    {parStruct.combVecPars{1,parStruct.respParIdx}{1,4},parStruct.buttons{1,4}}, ...
+    };
+%--------------------------------------------------------------------------
 
+% Build out the "correct button press" array automatically using Ethan's
+% respPar2KeyPress_v1 function, the response parameter in the first input
+% position, and the parKeyPressDecoder in the second positon.
+%--------------------------------------------------------------------------
+parStruct.correctButtons = respPar2KeyPress_v1(parStruct.updatedImgPars.(parStruct.respParName),parStruct.parKeyPressDecoder);
+%--------------------------------------------------------------------------
+```
+
+>  #### Under the section titled *Fixation point parameters...*:
+
+```matlab
+%--------------------------------------------------------------------------
+parStruct.fixChar='+'; % specify which character to use for fixation
+parStruct.fixSize=30; % fixation character size
+parStruct.fixClr=[1,1,1]; % fixation character color
+%--------------------------------------------------------------------------
+
+```
     
->  Under the section titled *Set output stimulus image size..*
+>  #### Under the section titled *Set output stimulus image size..*:
 
+```matlab
+%--------------------------------------------------------------------------
+parStruct.cropsz = 1024; % output edge dimension of screen & images (square)
+%--------------------------------------------------------------------------
+```
 
 ---
 > **Step 01:** Update a single parameter in `txtPltCntrlFixImgStackBldr_v1.m` to point to your new `txtTaskImgBuilderPDF_##.m` file, then run it to generate the desired stimulus image files.
