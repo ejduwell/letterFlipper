@@ -9,7 +9,7 @@ expParz=struct;
 % ADJUSTABLE PARS: PARS YOU MAY NEED/WANT TO ADJUST
 %--------------------------------------------------------------------------
 % Specify path to .mat file containing the tdf
-expParz.path2tdfMat="/home/eduwell/SynologyDrive/SNAP/projects/sandbox/pipeCleaner/cleanPrgrmDirsOut/letterFlipper/stimImages/testTaskImgs_20250715T185809/stimImgData.mat";
+expParz.path2tdfMat="/home/eduwell/SynologyDrive/SNAP/projects/sandbox/pipeCleaner/cleanPrgrmDirsOut/letterFlipper/stimImages/testTaskImgs_20251010T164755/stimImgData.mat";
 %--------------------------------------------------------------------------
 
 % AUTO SET PARS: DON'T UPDATE THESE UNLESS ABSOLUTELY NECESSARY
@@ -20,7 +20,7 @@ expParz.tdfIn=matFilePars.tdfOut;
 % Grab the "fixation only" image..
 expParz.fixOnlyIm=matFilePars.fixOnlyIm;
 % Grab the LRbuttons indicating the expected left and right button keys..
-expParz.LRbuttons=matFilePars.LRbuttons;
+expParz.buttons=matFilePars.buttons;
 % Specify which column contains the stimulus images
 expParz.imgCol=size(expParz.tdfIn,2); % currently assuming its the last column..
 

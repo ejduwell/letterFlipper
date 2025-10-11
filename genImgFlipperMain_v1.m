@@ -8,8 +8,6 @@ uniqueTimeStamp = datestr(now,30); % get current time/date stamp for filename to
 parsIn=struct; % initialize
 parsIn.parDescFile="genImgFlipperPDF_01";
 
-outDirParent="";
-
 % Output/Save parameters
 % Automatically detect and set directory/path params:
 % -------------------------------------

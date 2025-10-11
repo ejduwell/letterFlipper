@@ -37,7 +37,7 @@ widProp=expParz.widProp;
 heiProp=expParz.heiProp;
 imgCol=expParz.imgCol;
 %ImgWindowPadding=expParz.ImgWindowPadding;
-LRbuttons=expParz.LRbuttons;
+buttons=expParz.buttons;
 %numTrials=size(tdfIn,1); % get the total # of trials..
 numTrials=expParz.numTrials;
 respCol=cell(1,numTrials);
@@ -55,7 +55,7 @@ tdfRespColNum=respVarInfo.tdfRespColNum; % grab column number of response
 respVarColNumCol=num2cell(tdfRespColNum.*(ones(1,numTrials)));
 
 correctButtonsCol=respVarInfo.correctButtonsCol;
-nButtons=length(LRbuttons);
+nButtons=length(buttons);
 % =========================================================================
 
 % Seed the random number generator
@@ -176,7 +176,7 @@ escapeKey = KbName('ESCAPE');
 buttonz=struct;
 for kk=1:nButtons
     buttonStr=strcat("b",num2str(kk));
-    buttonz.(buttonStr)= KbName(LRbuttons{1,kk});
+    buttonz.(buttonStr)= KbName(buttons{1,kk});
 end
 %leftKey = KbName(LRbuttons{1,1});
 %rightKey = KbName(LRbuttons{1,2});

@@ -1,4 +1,4 @@
-function [tdfOut, fixOnlyIm, LRbuttons, correctButtonsCol] = txtPltCntrlFixImgGen_v1_2(parsIn)
+function [tdfOut, fixOnlyIm, buttons, correctButtonsCol] = txtPltCntrlFixImgGen_v1_2(parsIn)
 
 %% Unpack Input Parameters
 
@@ -27,7 +27,7 @@ fixSize = parsIn.fixSize';
 fixClr = parsIn.fixClr';
 pause4eachIm = parsIn.pause4eachIm;
 correctButtons=parsIn.correctButtons;
-LRbuttons=parsIn.LRbuttons;
+buttons=parsIn.buttons;
 
 nImgz = size(parsIn.updatedImgPars.(updatedImgParFldz{1,1}), 2);
 imageArrayOut = cell(1, nImgz);

@@ -31,9 +31,7 @@ outFileName="stimImgData.mat";
 
 %% Run Image Generation Routine
 
-%[tdfOut, fixOnlyIm, LRbuttons, correctButtonsCol] = txtPltCntrlFixImgGen_v1(parStruct);
-
-[tdfOut, fixOnlyIm, LRbuttons, correctButtonsCol] = txtPltCntrlFixImgGen_v1_2(parStruct);
+[tdfOut, fixOnlyIm, buttons, correctButtonsCol] = txtPltCntrlFixImgGen_v1_2(parStruct);
 
 %% Grab the response variable info from parStruct to save in output
 
@@ -66,7 +64,7 @@ uniqueTimeStamp = datestr(now,30); % get current time/date stamp for filename to
 outDirFullPath=strcat(outputDirParent,"/",outDirName,"_",uniqueTimeStamp,"/");
 mkdir(outDirFullPath);
 outFileFullPath=strcat(outputDirParent,"/",outDirName,"_",uniqueTimeStamp,"/",outFileName);
-save(outFileFullPath,"tdfOut","fixOnlyIm","LRbuttons","respVarInfo","qstVarInfo","mode","-v7.3");
+save(outFileFullPath,"tdfOut","fixOnlyIm","buttons","respVarInfo","qstVarInfo","mode","-v7.3");
 
 % return to start location..
 cd(strtDir);
