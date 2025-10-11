@@ -302,7 +302,7 @@ parStruct.cropsz = 1024; % output edge dimension of screen & images (square)
 ---
 > *Step 01a:* Open `txtPltCntrlFixImgStackBldr_v1.m` in you matlab editor and scroll to the 'Set Parameters' section
 
-> *Step 01b:* Update the line defining the 'parDescFile' to set this variable equal to your new `txtTaskImgBuilderPDF_yourName.m` file:
+> *Step 01b:* Update the line defining the 'parDescFile' to set this variable equal to your new `txtTaskImgBuilderPDF_yourName.m` filename:
 
 ```matlab
 % Specify which parameter descriptor file name to use..
@@ -312,7 +312,9 @@ parDescFile="txtTaskImgBuilderPDF_yourName";
 ---
 > **Step 02:** Make a new `genImgFlipperPDF_##.m` instance/copy for this task pointing to stimulus files created in **Step 01** and adjust other stimulus presentation parameters as desired.
 ---
-> *Step 02a:* make a copy of the `genImgFlipperPDF_01.m` template in the main `letterFlipper/` folder and give it a unique name. For the purposes of this instruction demo lets call it `genImgFlipperPDF_yourName.m`
+> *Step 02a:* Make a copy of the `genImgFlipperPDF_01.m` template in the main `letterFlipper/` folder and give it a unique name. For the purposes of this instruction demo lets call it `genImgFlipperPDF_yourName.m`
+
+> *Step 02b:* Open `genImgFlipperPDF_yourName.m` in you matlab editor, scroll to the 'Input Data/TDF Parameters' section. Update the line defining 'expParz.path2tdfMat' to set this variable equal to the 
 
 ---
 > **Step 03:** Update a single parameter in `genImgFlipperMain_v1.m` to point to your newly created `genImgFlipperPDF_##.m` instance.
