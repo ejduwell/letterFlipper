@@ -312,6 +312,7 @@ parDescFile="txtTaskImgBuilderPDF_yourName";
 ---
 > **Step 02:** Make a new `genImgFlipperPDF_##.m` instance/copy for this task pointing to stimulus files created in **Step 01** and adjust other stimulus presentation parameters as desired.
 ---
+> *Step 02a:* make a copy of the `genImgFlipperPDF_01.m` template in the main `letterFlipper/` folder and give it a unique name. For the purposes of this instruction demo lets call it `genImgFlipperPDF_yourName.m`
 
 ---
 > **Step 03:** Update a single parameter in `genImgFlipperMain_v1.m` to point to your newly created `genImgFlipperPDF_##.m` instance.
