@@ -138,24 +138,103 @@ Below are more detailed instructions to walk you through each of the 5 steps in 
 <div align="center">
     
 >   #### Under the section titled: *Specify Parameters that vary across images*
-
-> **Build out set of letters**
-
-> **Build out set of locations**
-
-> **Build out set of text sizes**
-
-> **Build out set of text colors**
-
-> **Build out set of text rotation angles**
-
-> **List Names for Sets Pars Changing Across Images**
-
-> **List Corresponding Sets of Pars Changing Across Images**
-
-> **List TDF Header Label Names for Sets Pars Changing Across Images**
+---
 
 </div>
+
+
+```matlab
+% Build out set of letters
+%--------------------------------------------------------------------------
+parStruct.letterSet={'E'};% specify letters you wish to include (1xN cell)
+parStruct.SnellenEmode=1; % if 1, will build "snellen Es" instead of drawing normal text..
+%--------------------------------------------------------------------------
+```
+
+```matlab
+% Build out set of locations
+%--------------------------------------------------------------------------
+parStruct.nEcc=1; % specify number of eccentricity values
+parStruct.MinMaxEcc=[0,0]; % set max/min eccentricity
+parStruct.nAng=1; % specify number of angle values 
+parStruct.MinMaxAng=[0,0]; % for nAng evenly spaced between 0 and 360
+% (line below automatically generates the set of coordinates with the pars 
+% specified above using genEccAngSet_v1)
+parStruct.LocationSet = genEccAngSet_v1(parStruct.nEcc, parStruct.nAng, parStruct.MinMaxEcc, parStruct.MinMaxAng);
+%--------------------------------------------------------------------------
+```
+
+```matlab
+% Build out set of text sizes
+%--------------------------------------------------------------------------
+parStruct.nTxtSizes=71; % set desired number of different text sizes
+parStruct.txtSizeMinMax=[5,75]; % set min and max text size
+% (line below automatically generates the set of text sizes with the pars 
+% specified above using linspace)
+parStruct.txtSizeSet=num2cell(linspace(parStruct.txtSizeMinMax(1),parStruct.txtSizeMinMax(2),parStruct.nTxtSizes));
+%--------------------------------------------------------------------------
+```
+
+```matlab
+% Build out set of text colors
+%--------------------------------------------------------------------------
+% specify set of rgb vectors to set the possible text color/luminance vals
+parStruct.txtClrSet={
+    [0,0,0],... % (one rgb vector per line)
+    };
+%--------------------------------------------------------------------------
+```
+
+```matlab
+% Build out set of text rotation angles
+%--------------------------------------------------------------------------
+% note, angles assume clockwise rotation..
+parStruct.txtAngSet={
+    0,...
+    90,...
+    -90,...
+    180,...
+    };
+%--------------------------------------------------------------------------
+```
+
+> ***Note:** the following 3 should be updated together such that the parameter names, sets, and header names correspond to the same stimulus aspect.*
+
+```matlab
+% List Names for Sets Pars Changing Across Images
+%--------------------------------------------------------------------------
+parStruct.combVecParNames={
+    "setOfLetters",...
+    "setOfLocations",...
+    "txtSize",...
+    "txtClr",...
+    "setOfAngles",...
+    };
+%--------------------------------------------------------------------------
+
+% List Corresponding Sets of Pars Changing Across Images
+%--------------------------------------------------------------------------
+parStruct.combVecPars={
+    parStruct.letterSet,...
+    parStruct.LocationSet,...
+    parStruct.txtSizeSet,...
+    parStruct.txtClrSet,...
+    parStruct.txtAngSet,...
+    };
+%--------------------------------------------------------------------------
+
+% List TDF Header Label Names for Sets Pars Changing Across Images
+%--------------------------------------------------------------------------
+parStruct.tdfHeaderz={
+    "Letter",...
+    "Location",...
+    "TextSize",...
+    "TextColor",...    
+    "TextRotation",...
+    };
+%--------------------------------------------------------------------------
+```
+
 
 <div align="center">
     
