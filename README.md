@@ -420,7 +420,7 @@ parsIn.parDescFile="genImgFlipperPDF_yourName";
 
 >  *Step 04a:* Either push the green 'Run' button at the top of the editor window or run it as a command in your Matlab Command Window:
 ```matlab
-genImgFlipperMain_v1`
+genImgFlipperMain_v1
 ```
 >  *Step 04b:* Provide requested command line inputs such as a subject id, etc. to begin task.
 
