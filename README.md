@@ -310,10 +310,19 @@ parStruct.cropsz = 1024; % output edge dimension of screen & images (square)
 % Specify which parameter descriptor file name to use..
 parDescFile="txtTaskImgBuilderPDF_yourName";
 ```
-> *Step 01c:* Run txtPltCntrlFixImgStackBldr_v1 either by hitting the green "Run" button in the editor window or by running it as a command in the Matlab command window:
+
+> *Step 01c:* At the bottom of the 'Set Parameters', update the parameter called `outDirName` to set your desired output directory name:
+> - for the purposes of this demo, we'll call it `"testTaskImgs"`
+```matlab
+outDirName="testTaskImgs"; % Specify name for output directory
+```
+
+> *Step 01d:* Run txtPltCntrlFixImgStackBldr_v1 either by hitting the green "Run" button in the editor window or by running it as a command in the Matlab command window:
 ```matlab
 txtPltCntrlFixImgStackBldr_v1
 ```
+
+> *Step01e:* When this is done runnung, check the `stimImages/` output directory for a new output subdirectory. It should be called `testTaskImgs` with a date/time stamp appended to the end, and should contain a single file called `stimImgData.mat`
 
 ---
 > ### Step 02:
