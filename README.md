@@ -350,13 +350,13 @@ expParz.heiProp=1;
 ```matlab
 % Specify the total number of trials desired for the experiment
 expParz.numTrials=50;
-% Presentation Time for the image in seconds
+% Presentation Time for the image in seconds (time after trial start that images appear)
 expParz.presTimeSecs = 0.25;
 % Interstimulus interval time in seconds
 expParz.isiTimeSecs = 1;
 % Number of frames to wait before re-drawing
 expParz.waitframes = 1;
-% Max time allowed for response..
+% Max time allowed for response.. (time at which images will disappear if a button is not pressed)
 expParz.tRespMax=200; % set to large number if you want effectively unlimited response time..
 ```
 
