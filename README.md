@@ -414,7 +414,7 @@ genImgFlipperMain_v1`
 
 > *Step 04d:*  After the subject presses any key, the task should begin.
 
-> *Step 04e:* When the task is completed, the screen will close and data will be saved automatically in a subdirectory name matching the subject's id.
+> *Step 04e:* When the task is completed, the screen will close and data will be saved automatically in a subdirectory of the `expDataOut/` ouptut directory with a name matching the subject's id.
 > - Within that subject's subdirectory, data from individual runs/blocks are saved within subdirectories named using the subject id with a unique time/date stamp appended.
 > - .mat files for each run/block are saved within using the same naming schema.
 > - in the interest of documentation and reproducability, a copy of the pdf file used in that run/block is also saved within named using the following naming scheme: `pdfFileFrmExmt_SID_UNIQUETSTAMP.m` where 'SID' is the subject's unique ID and 'UNIQUETSTAMP' is the unique timestamp from the run/block.
