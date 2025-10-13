@@ -124,7 +124,7 @@ However, regardless of the details of any particular use case, the creation of t
 > - **Step 04:** Run `genImgFlipperMain_v1.m` to run the task.
 ---
 
-### Detailed Instructions for letterFlipper Workflow:
+### Detailed instructions for letterFlipper workflow:
 
 Below are more detailed instructions to walk you through each of the 5 steps in the section above.
 
