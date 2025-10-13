@@ -423,8 +423,32 @@ genImgFlipperMain_v1`
 
 ## Task Data Output:
 
+- As described in *Step 04e* of the detailed instructions above, the output data for each subject are saved within the `expDataOut/` output directory.
 
+- To view a subject's data, within Matlab, navigate to that subject's subdirectory, enter that subject's subdirectory, and then enter the subdirectory within that subject's folder matching the timestamp of the session-of-interest
 
+- Double clicking on the .mat file should load to variables into the workspace:
+      - parsIn: a struct containing a single field 'parDescFile' containing the parameter descriptor file name used to run the experiment
+      - tdfOut: a cell array containing the data from the subject's expereriment run. The top row contains the header labels for each column. Subsequent rows contain data.
 
+- 'tdfOut' is the variable you are likely interested in:
+![letterFlipper_tdfExample](https://github.com/ejduwell/letterFlipper/blob/main/gh_READMEimgs/letterFlipper_tdfOutputExmpl.png)
+
+- Column names are fairly descriptive and self-explanatory, but in the interest of clarity, a description of each is provided below:
+```
+column 01: "Letter"            -----> the target letter for the trial
+column 02: "Location"          -----> location coordinate of target letter
+column 03: "TextSize"          -----> size of target letter
+column 04: "TextColor"         -----> color of target letter
+column 05: "TextRotation"      -----> rotation of target letter
+column 06: "CorrectButtons"    -----> the correct/expected button response for each trial
+column 07: "StimulusImg"       -----> copy of the image presented for each trial
+column 08: "SubjectResponses"  -----> the button the subject pressed for each trial
+column 09: "ResponseTimes"     -----> the response time measured from the image onset to button press for each trial
+column 10: "Correctness"       -----> indicates the correctness of subject's response for each trial. (0=incorrect, 1=correct)
+column 11: "RespVarColNum"     -----> indicates which column number in this tdf contains the parameter subject's are responding to on each trial
+column 12: "QUEST"             -----> indicates which interleaved QUEST suggested the QUEST-manipulated parameter on each trial
+column 13: "QuestVarColNum"    -----> indicates which column contains the column number in this TDF of the parameter manipulated by QUEST on each trial
+```
 
 
