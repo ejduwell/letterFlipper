@@ -1,3 +1,10 @@
+
+<div align="center">
+
+![letterFlipper_logoAscii](https://github.com/ejduwell/letterFlipper/blob/main/gh_READMEimgs/letErFlip_logoImg_snapshot_ascii.png)
+
+</div>
+
 # letterFlipper
 
 Repository of code which establishes a generalized framework for building and running visual stimuli presenting letters in MATLAB with Psychtoolbox.
