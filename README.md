@@ -443,8 +443,8 @@ genImgFlipperMain_v1
 - To view a subject's data, within Matlab, navigate to that subject's subdirectory, enter that subject's subdirectory, and then enter the subdirectory within that subject's folder matching the timestamp of the session-of-interest
 
 - Double clicking on the .mat file should load to variables into the workspace:
-      - parsIn: a struct containing a single field 'parDescFile' containing the parameter descriptor file name used to run the experiment
-      - tdfOut: a cell array containing the data from the subject's expereriment run. The top row contains the header labels for each column. Subsequent rows contain data.
+  - parsIn: a struct containing a single field 'parDescFile' containing the parameter descriptor file name used to run the experiment 
+  - tdfOut: a cell array containing the data from the subject's expereriment run. The top row contains the header labels for each column. Subsequent rows contain data.
 
 - 'tdfOut' is the variable you are likely interested in:
 ![letterFlipper_tdfExample](https://github.com/ejduwell/letterFlipper/blob/main/gh_READMEimgs/letterFlipper_tdfOutputExmpl.png)
