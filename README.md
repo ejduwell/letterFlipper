@@ -322,7 +322,7 @@ outDirName="testTaskImgs"; % Specify name for output directory
 txtPltCntrlFixImgStackBldr_v1
 ```
 
-> *Step01e:* When this is done runnung, check the `stimImages/` output directory for a new output subdirectory. It should be called `testTaskImgs` with a date/time stamp appended to the end, and should contain a single file called `stimImgData.mat`
+> *Step01e:* When this is done running, check the `stimImages/` output directory for a new output subdirectory. It should be called `testTaskImgs` with a date/time stamp appended to the end, and should contain a single file called `stimImgData.mat`
 
 ---
 > ### Step 02:
