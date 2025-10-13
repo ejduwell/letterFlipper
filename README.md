@@ -2,6 +2,14 @@
 
 Repository of code which establishes a generalized framework for building and running visual stimuli presenting letters in MATLAB with Psychtoolbox.
 
+## Quick Links to Specific Sections:
+
+- [General Overview](https://github.com/ejduwell/letterFlipper/tree/main?tab=readme-ov-file#general-overview)
+- [Dependencies](https://github.com/ejduwell/letterFlipper/tree/main?tab=readme-ov-file#dependencies)
+- [Installation](https://github.com/ejduwell/letterFlipper/tree/main?tab=readme-ov-file#installation)
+- [Usage](https://github.com/ejduwell/letterFlipper/tree/main?tab=readme-ov-file#usage)
+- [Task Data Output](https://github.com/ejduwell/letterFlipper/tree/main?tab=readme-ov-file#task-data-output)
+
 ## General Overview:
 
 **letterFlipper** is a MATLAB repository developed for building and implimenting cognitive vision science experiments presenting letter stimuli with Psychtoolbox. **letterFlipper** contains generalized code enabling users to quickly and flexibly design and run wide range of potential visual tasks presenting letters/characters.
