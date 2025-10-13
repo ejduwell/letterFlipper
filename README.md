@@ -129,7 +129,8 @@ However, regardless of the details of any particular use case, the creation of t
 Below are more detailed instructions to walk you through each of the 5 steps in the section above.
 
 ---
-> **Step 00:** Make a new `txtTaskImgBuilderPDF_##.m` instance/copy for this task, and adjust parameters to set desired stimulus image and response parameters
+> ### Step 00: 
+> - Make a new `txtTaskImgBuilderPDF_##.m` instance/copy for this task, and adjust parameters to set desired stimulus image and response parameters
 ---
 > *Step 00a:* make a copy of the `txtTaskImgBuilderPDF_01.m` template in the main `letterFlipper/` folder and give it a unique name. For the purposes of this instruction demo lets call it `txtTaskImgBuilderPDF_yourName.m`
 
@@ -298,7 +299,8 @@ parStruct.cropsz = 1024; % output edge dimension of screen & images (square)
 ```
 
 ---
-> **Step 01:** Update a single parameter in `txtPltCntrlFixImgStackBldr_v1.m` to point to your new `txtTaskImgBuilderPDF_yourName.m` file, then run it to generate the desired stimulus image files.
+> ### Step 01:
+> - Update a single parameter in `txtPltCntrlFixImgStackBldr_v1.m` to point to your new `txtTaskImgBuilderPDF_yourName.m` file, then run it to generate the desired stimulus image files.
 ---
 > *Step 01a:* Open `txtPltCntrlFixImgStackBldr_v1.m` in you matlab editor and scroll to the 'Set Parameters' section
 
@@ -314,18 +316,21 @@ txtPltCntrlFixImgStackBldr_v1
 ```
 
 ---
-> **Step 02:** Make a new `genImgFlipperPDF_##.m` instance/copy for this task pointing to stimulus files created in **Step 01** and adjust other stimulus presentation parameters as desired.
+> ### Step 02:
+> - Make a new `genImgFlipperPDF_##.m` instance/copy for this task pointing to stimulus files created in **Step 01** and adjust other stimulus presentation parameters as desired.
 ---
 > *Step 02a:* Make a copy of the `genImgFlipperPDF_01.m` template in the main `letterFlipper/` folder and give it a unique name. For the purposes of this instruction demo lets call it `genImgFlipperPDF_yourName.m`
 
 > *Step 02b:* Open `genImgFlipperPDF_yourName.m` in you matlab editor, scroll to the 'Input Data/TDF Parameters' section. Update the line defining 'expParz.path2tdfMat' to set this variable equal to the 
 
 ---
-> **Step 03:** Update a single parameter in `genImgFlipperMain_v1.m` to point to your newly created `genImgFlipperPDF_##.m` instance.
+> ### Step 03:
+> - Update a single parameter in `genImgFlipperMain_v1.m` to point to your newly created `genImgFlipperPDF_##.m` instance.
 ---
 
 ---
-> **Step 04:** Run `genImgFlipperMain_v1.m` to run the task.
+> ### Step 04:
+> - Run `genImgFlipperMain_v1.m` to run the task.
 ---
 
 
