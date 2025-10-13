@@ -391,12 +391,33 @@ expParz.qstParams.common.gamma=0.5;
 > - Update a single parameter in `genImgFlipperMain_v1.m` to point to your newly created `genImgFlipperPDF_##.m` instance.
 ---
 
+> *Step 03a:* Open `genImgFlipperMain_v1.m` and scroll to the 'Set Parameters' section near the top.
+
+> *Step 03b:* Update the line defining the parameter `parsIn.parDescFile` to set it equal to your new PDF file `genImgFlipperPDF_yourName`
+```matlab
+parsIn.parDescFile="genImgFlipperPDF_yourName";
+```
+
 ---
 > ### Step 04:
-> - Run `genImgFlipperMain_v1.m` to run the task.
+> - Run `genImgFlipperMain_v1.m` to run the task:
 ---
 
+>  *Step 04a:* Either push the green 'Run' button at the top of the editor window or run it as a command in your Matlab Command Window:
+```matlab
+genImgFlipperMain_v1`
+```
+>  *Step 04b:* Provide requested command line inputs such as a subject id, etc. to begin task.
 
+>  *Step 04c:* After providing these command line inputs, the task should begin and you should be greeted with the following start page:
+
+> *Step 04d:*  After the subject presses any key, the task should begin.
+
+> *Step 04e:* When the task is completed, the screen will close and data will be saved automatically in a subdirectory name matching the subject's id.
+> - Within that subject's subdirectory, data from individual runs/blocks are saved within subdirectories named using the subject id with a unique time/date stamp appended.
+> - .mat files for each run/block are saved within using the same naming schema.
+> - in the interest of documentation and reproducability, a copy of the pdf file used in that run/block is also saved within named using the following naming scheme: `pdfFileFrmExmt_SID_UNIQUETSTAMP.m` where 'SID' is the subject's unique ID and 'UNIQUETSTAMP' is the unique timestamp from the run/block.
+> - this feature was included to ensure a record documenting of the exact parameters used to create/run any given stimulus is always available for future reference.
 
 
 ## Task Data Output:
