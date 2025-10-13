@@ -330,7 +330,13 @@ txtPltCntrlFixImgStackBldr_v1
 ---
 > *Step 02a:* Make a copy of the `genImgFlipperPDF_01.m` template in the main `letterFlipper/` folder and give it a unique name. For the purposes of this instruction demo lets call it `genImgFlipperPDF_yourName.m`
 
-> *Step 02b:* Open `genImgFlipperPDF_yourName.m` in you matlab editor, scroll to the 'Input Data/TDF Parameters' section. Update the line defining 'expParz.path2tdfMat' to set this variable equal to the 
+> *Step 02b:* Open `genImgFlipperPDF_yourName.m` in you matlab editor, scroll to the 'Input Data/TDF Parameters' section. Update the line defining 'expParz.path2tdfMat' to set this variable equal to the full path to the .mat file generated in *Step01d-e*
+```matlab
+%--------------------------------------------------------------------------
+% Specify path to .mat file containing the tdf
+expParz.path2tdfMat="/home/eduwell/SynologyDrive/SNAP/projects/letterFlipper/stimImages/testTaskImgs_20251010T164755/stimImgData.mat";
+%--------------------------------------------------------------------------
+```
 
 ---
 > ### Step 03:
