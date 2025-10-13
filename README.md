@@ -410,6 +410,7 @@ genImgFlipperMain_v1`
 >  *Step 04b:* Provide requested command line inputs such as a subject id, etc. to begin task.
 
 >  *Step 04c:* After providing these command line inputs, the task should begin and you should be greeted with the following start page:
+![letterFlipper_startPage](https://github.com/ejduwell/letterFlipper/blob/main/gh_READMEimgs/letterFlipper_startPage.png)
 
 > *Step 04d:*  After the subject presses any key, the task should begin.
 
