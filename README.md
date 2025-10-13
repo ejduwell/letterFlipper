@@ -337,6 +337,54 @@ txtPltCntrlFixImgStackBldr_v1
 expParz.path2tdfMat="/home/eduwell/SynologyDrive/SNAP/projects/letterFlipper/stimImages/testTaskImgs_20251010T164755/stimImgData.mat";
 %--------------------------------------------------------------------------
 ```
+> *Step 02c:* Still within `genImgFlipperPDF_yourName.m`, scroll to the 'Screen Dimension Parameters' section and set parameters to desired values:
+```matlab
+% Specify proportion of screen to use
+% Note: should be values ranging 0-1. 
+% 1 means use full width/height
+% 0.25 means use 25%, 0.5 means use 50%, etc...
+expParz.widProp=0.5;
+expParz.heiProp=1;
+```
+> *Step 02d:* Scroll to the 'Trial Structure/Timing Parameters' section and set trial architecture parameters to your desired values:
+```matlab
+% Specify the total number of trials desired for the experiment
+expParz.numTrials=50;
+% Presentation Time for the image in seconds
+expParz.presTimeSecs = 0.25;
+% Interstimulus interval time in seconds
+expParz.isiTimeSecs = 1;
+% Number of frames to wait before re-drawing
+expParz.waitframes = 1;
+% Max time allowed for response..
+expParz.tRespMax=200; % set to large number if you want effectively unlimited response time..
+```
+
+> *Step 02e:* Scroll to the 'QUEST Parameters' section and set QUEST-related parameters to your desired values:
+```matlab
+expParz.qstParams=struct;
+expParz.qstParams.questParTdfCol=1; % indicates column number for tdf col (don't change unless you know what you're doing)
+expParz.qstParams.nQuests=3; % Set total number of interleaved QUESTs
+expParz.qstParams.qstMinMax={5,75}; % Set Min and Max values for interleaved QUESTs
+expParz.qstParams.qstThresholds={0.65,0.70,0.75}; % Set accuracy thresholds for each interleaved QUEST
+% loop below 'auto-sets' other quest starting par for all..
+for hh=1:expParz.qstParams.nQuests
+    qStringTmp=strcat("q",num2str(hh));
+    expParz.qstParams.(qStringTmp).thrhld = expParz.qstParams.qstThresholds{1,hh};
+    expParz.qstParams.(qStringTmp).tGuess = mean(expParz.qstParams.qstMinMax{1,:}); % start at the mean of the range
+    expParz.qstParams.(qStringTmp).tGuessSd = 0.3*(abs(expParz.qstParams.qstMinMax{1,1}-expParz.qstParams.qstMinMax{1,2}));  % set std. dev. to n% of the total possible parameter value range
+    expParz.qstParams.(qStringTmp).grain = 0.01;
+    expParz.qstParams.(qStringTmp).range = 2*(abs(expParz.qstParams.qstMinMax{1,1}-expParz.qstParams.qstMinMax{1,2})); % set quest range to 2 times total possible parameter range.
+end
+
+% general pars common to all quests.. (probably don't need/want to tweak
+% these)
+%--------------------------------------------------------------------------
+expParz.qstParams.common.beta=3.5;
+expParz.qstParams.common.delta=0.01;
+expParz.qstParams.common.gamma=0.5;
+%--------------------------------------------------------------------------
+```
 
 ---
 > ### Step 03:
