@@ -433,7 +433,7 @@ genImgFlipperMain_v1
 > - Within that subject's subdirectory, data from individual runs/blocks are saved within subdirectories named using the subject id with a unique time/date stamp appended.
 > - .mat files for each run/block are saved within using the same naming schema.
 > - in the interest of documentation and reproducability, a copy of the pdf file used in that run/block is also saved within named using the following naming scheme: `pdfFileFrmExmt_SID_UNIQUETSTAMP.m` where 'SID' is the subject's unique ID and 'UNIQUETSTAMP' is the unique timestamp from the run/block.
-> - this feature was included to ensure a record documenting of the exact parameters used to create/run any given stimulus is always available for future reference.
+> - this feature was included to ensure there is always a record documenting the exact parameters used to create/run any given stimulus available for future reference.
 
 
 ## Task Data Output:
