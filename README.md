@@ -473,11 +473,11 @@ column 13: "QuestVarColNum"    -----> indicates which column contains the column
 
 **letterFlipper** also includes a number of functions for limited analysis and visualization of response accuracy from the task output data.
 
-At present **letterFlipper** has functions which allow you to flexibly bin the , compute bin-wise accuracy, and fit a sigmoidal Naka Rushton psychometric function output data.
+At present, **letterFlipper** has functions which allow you to flexibly bin, compute bin-wise accuracy, and fit a sigmoidal Naka Rushton psychometric function to the output data.
 
 As detailed in [the table above](https://github.com/ejduwell/letterFlipper/tree/main?tab=readme-ov-file#short-list-of-important-files-and-foldersdirectories), the two main functions that do the heavy lifting in binning the data, computing bin-wise accuracy, and fitting functions are `analyzeBinnedAccuracy_v6.m` and `fitNakaRushton_v2.m` 
 
-`fitNakaRushton_example.m` is a 'wrapper script' for the two basic functions above. I included this to illustrate how to use the above functions in an eventual data analysis pipeline, but also to provide users a rudimentary means of visualizing pilot data collected from tasks made with **letterFlipper** during development.
+`fitNakaRushton_example.m` is a 'wrapper script' for the two basic functions above. I included this to illustrate how to use the functions in an eventual data analysis pipeline, but also to provide users a rudimentary means of visualizing pilot data collected from tasks made with **letterFlipper** during development.
 
 ### How to use fitNakaRushton_example.m:
 
