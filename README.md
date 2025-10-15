@@ -123,7 +123,9 @@ savepath
 | `txtTaskImgBuilderPDF_01.m`         | 'Parameter Descriptor File' instance/template for defining adustable parameters used in txtPltCntrlFixImgStackBldr_v1.m |
 | `genImgFlipperMain_v1.m`            | Main function for running/presenting stimuli                                                                            |
 | `genImgFlipperPDF_01.m`             | 'Parameter Descriptor File' instance/template for defining adustable parameters used in genImgFlipperMain_v1.m          |
-
+| `fitNakaRushton_example.m`          | Wrapper script for analyzeBinnedAccuracy_v6.m to illustrate basic usage/how to fit sigmoidal Naka Rushton curves        |
+| `analyzeBinnedAccuracy_v6.m`        | Primary function called by fitNakaRushton_example.m to bin accuracy data and fit models.                                |
+| `fitNakaRushton_v2.m`               | Function called by analyzeBinnedAccuracy_v6.m that does the actual model fitting.                                       |
 
 ### General workflow for creating and running stimuli with letterFlipper:
 
@@ -465,5 +467,7 @@ column 11: "RespVarColNum"     -----> indicates which column number in this tdf 
 column 12: "QUEST"             -----> indicates which interleaved QUEST suggested the QUEST-manipulated parameter on each trial
 column 13: "QuestVarColNum"    -----> indicates which column contains the column number in this TDF of the parameter manipulated by QUEST on each trial
 ```
+
+## Data Analysis and Visualization:
 
 
