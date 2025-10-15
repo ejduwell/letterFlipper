@@ -452,6 +452,8 @@ genImgFlipperMain_v1
 - 'tdfOut' is the variable you are likely interested in:
 ![letterFlipper_tdfExample](https://github.com/ejduwell/letterFlipper/blob/main/gh_READMEimgs/letterFlipper_tdfOutputExmpl.png)
 
+- 'tdf' stands for 'trial descriptor file'. In this way, each row in the array represent a trial from the task.
+
 - Column names are fairly descriptive and self-explanatory, but in the interest of clarity, a description of each is provided below:
 ```
 column 01: "Letter"            -----> the target letter for the trial
