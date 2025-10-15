@@ -548,6 +548,14 @@ yPltLimz=[yPltUpperLim, yPltLowerLim]; % single vector of containing both
 %--------------------------------------------------------------------------
 ```
 
+- Then run the script either by running `fitNakaRushton_example` in the Matlab Command Window or by hitting the green "Run" button at the top of the Matlab editor window.
 
+- When finished, the resulting output figure image will be saved in the output directory path location specified by the `dirOut` parameter in the 'Set Parameters' section.
 
+- Figures should look like the one pictured below generated from a limited # of trials on a toy experiment (current default settings in the included template/example PDF files) I ran on myself:
+![exampleNRCurveFitFig](https://github.com/ejduwell/letterFlipper/blob/main/gh_READMEimgs/subj_JNK_TextSize_acc_by_bin_25bins_thresh1_randomString.png)
+
+- Color indicates the # of data points in each bin that are contributing to the plotted mean values.
+- Bin count also figures into the fitting routine. Bins with more datapoints are weighted proportionally in the fitting process.
+- Dotted vertical lines demark the requested accuracy threshold solutions for subjects' respective fitted functions specified by `NRfitParsIn.thrldz2solve` in the 'Set Parameters' section
 
