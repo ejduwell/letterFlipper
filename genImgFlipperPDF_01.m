@@ -9,7 +9,7 @@ expParz=struct;
 % ADJUSTABLE PARS: PARS YOU MAY NEED/WANT TO ADJUST
 %--------------------------------------------------------------------------
 % Specify path to .mat file containing the tdf
-expParz.path2tdfMat="/home/eduwell/SynologyDrive/SNAP/projects/sandbox/pipeCleaner/cleanPrgrmDirsOut/letterFlipper/stimImages/testTaskImgs_20251010T164755/stimImgData.mat";
+expParz.path2tdfMat="/home/eduwell/SynologyDrive/SNAP/projects/sandbox/pipeCleaner/cleanPrgrmDirsOut/letterFlipper/stimImages/testTaskImgs_20251013T191554/stimImgData.mat";
 %--------------------------------------------------------------------------
 
 % AUTO SET PARS: DON'T UPDATE THESE UNLESS ABSOLUTELY NECESSARY
@@ -61,7 +61,7 @@ expParz.heiProp=1;
 % ADJUSTABLE PARS: PARS YOU MAY NEED/WANT TO ADJUST
 %--------------------------------------------------------------------------
 % Specify the total number of trials desired for the experiment
-expParz.numTrials=50;
+expParz.numTrials=100;
 % Presentation Time for the image in seconds
 expParz.presTimeSecs = 0.25;
 % Interstimulus interval time in seconds
@@ -75,11 +75,11 @@ expParz.tRespMax=200; % set to large number if you want effectively unlimited re
 %% QUEST Parameters
 
 expParz.qstParams=struct;
-expParz.qstParams.questParTdfCol=1;
-expParz.qstParams.nQuests=3;
-expParz.qstParams.qstMinMax={5,75};
-expParz.qstParams.qstThresholds={0.65,0.70,0.75};
-
+expParz.qstParams.questParTdfCol=1; % indicates column number for tdf col (don't change unless you know what you're doing)
+expParz.qstParams.nQuests=3; % Set total number of interleaved QUESTs
+expParz.qstParams.qstMinMax={5,75}; % Set Min and Max values for interleaved QUESTs
+expParz.qstParams.qstThresholds={0.35,0.55,0.75}; % Set accuracy thresholds for each interleaved QUEST
+% loop below 'auto-sets' other quest starting par for all..
 for hh=1:expParz.qstParams.nQuests
     qStringTmp=strcat("q",num2str(hh));
     expParz.qstParams.(qStringTmp).thrhld = expParz.qstParams.qstThresholds{1,hh};
@@ -89,11 +89,13 @@ for hh=1:expParz.qstParams.nQuests
     expParz.qstParams.(qStringTmp).range = 2*(abs(expParz.qstParams.qstMinMax{1,1}-expParz.qstParams.qstMinMax{1,2})); % set quest range to 2 times total possible parameter range.
 end
 
-% common to all quests..
+% general pars common to all quests.. (probably don't need/want to tweak
+% these)
 %--------------------------------------------------------------------------
 expParz.qstParams.common.beta=3.5;
 expParz.qstParams.common.delta=0.01;
-expParz.qstParams.common.gamma=0.5;
+%expParz.qstParams.common.gamma=0.5;
+expParz.qstParams.common.gamma=0.25;
 %--------------------------------------------------------------------------
 
 end

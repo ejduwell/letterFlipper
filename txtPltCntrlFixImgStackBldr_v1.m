@@ -26,7 +26,7 @@ programDir = fileparts(which('txtPltCntrlFixImgStackBldr_v1.m'));
 addpath(genpath(programDir)); % make sure the program folder is on our path
 outputDirParent=strcat(programDir,"/stimImages"); % make outputDirParent the stimImages folder
 % -------------------------------------
-outDirName="testTaskImgs"; % Specify name for output director
+outDirName="testTaskImgs"; % Specify name for output directory
 outFileName="stimImgData.mat";
 
 %% Run Image Generation Routine
