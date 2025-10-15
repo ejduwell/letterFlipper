@@ -479,7 +479,7 @@ As detailed in [the table above](https://github.com/ejduwell/letterFlipper/tree/
 
 `fitNakaRushton_example.m` is a 'wrapper script' for the two basic functions above. I included this to illustrate how to use the above functions in an eventual data analysis pipeline, but also to provide users a rudimentary means of visualizing pilot data collected from tasks made with **letterFlipper** during development.
 
-### How to use fitNakaRushton_example.m :
+### How to use fitNakaRushton_example.m:
 
 - First open fitNakaRushton_example.m and scroll to the 'Set Parameters' section
 
