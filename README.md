@@ -16,6 +16,7 @@ Repository of code which establishes a generalized framework for building and ru
 - [Installation](https://github.com/ejduwell/letterFlipper/tree/main?tab=readme-ov-file#installation)
 - [Usage](https://github.com/ejduwell/letterFlipper/tree/main?tab=readme-ov-file#usage)
 - [Task Data Output](https://github.com/ejduwell/letterFlipper/tree/main?tab=readme-ov-file#task-data-output)
+- [Data Analysis and Visualization](https://github.com/ejduwell/letterFlipper/tree/main?tab=readme-ov-file#data-analysis-and-visualization)
 
 ## General Overview:
 
